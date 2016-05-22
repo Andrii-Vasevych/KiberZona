@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<meta charset="utf-8"></meta>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"></link>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-light-blue.css"></link>
+    <body>
+        
+        <header class="w3-container w3-card-4 w3-theme">
+			<title>KiberZona</title>
+            <h1>KiberZona</h1>
+        </header>
+		
+		<div class="w3-container" id="itemcontainer"> </div>
+        
+        <footer class="w3-container w3-theme" align="right">
+            <button id="buybutton" class="w3-btn w3-theme-l3">Замовити</button> <span id="totalprice">Сума замовлення: </span>
+        </footer>
+		
+		<div id="buydialog" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('buydialog').style.display='none'"
+                        class="w3-closebtn">&times;</span>
+                    <p>Дякуємо за замовлення!</p>
+                    <p>Ваше замовлення вартує <span id="dialogprice"></span> грн.</p>
+                </div>
+            </div>
+        </div>
+		
+		<script src="shop-step2.js"></script>
+		
+    </body>
+</html>
